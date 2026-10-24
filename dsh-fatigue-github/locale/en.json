@@ -1,6 +1,0 @@
-{
-  "meta": {
-    "title": "Fatigue & Sleep",
-    "description": "Tracks rest and deep sleep, and lowers the model's compute budget when the last 24 hours fall short of the sleep target."
-  }
-}
