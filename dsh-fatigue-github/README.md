@@ -27,7 +27,9 @@
 
 ## 联动
 
-- **dsh-feiyu-mood**：被叫醒时读本插件的 `state.json` 里的 `lastWake`：24h 深度睡眠 < 目标 → 心情减 `sleepMoodPenalty`；≥ 目标 → 心情加 `sleepMoodBonus`，并在随后 `sleepCooldownHours`（默认 24h）内不再按睡眠调整。这些数值在心情插件的设置页里改。
+- **dsh-feiyu-mood**（可选）：被叫醒时读本插件的 `state.json` 里的 `lastWake`：24h 深度睡眠 < 目标 → 心情减 `sleepMoodPenalty`；≥ 目标 → 心情加 `sleepMoodBonus`，并在随后 `sleepCooldownHours`（默认 24h）内不再按睡眠调整。
+
+  这段逻辑在心情插件里，**不在本仓库的代码里**。要用的话给 `dsh-feiyu-mood` 打补丁：[`patches/dsh-feiyu-mood-sleep-link.md`](patches/dsh-feiyu-mood-sleep-link.md)。不打补丁也不影响本插件，只是心情不会被睡眠影响。
 
 ## 接口
 
