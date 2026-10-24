@@ -1,0 +1,4 @@
+- insert:
+    - id: fatigue
+      name: '@local/dsh-fatigue'
+      config: {}
